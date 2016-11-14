@@ -1,0 +1,24 @@
+{
+  "name": "vertx-eventbus-plus",
+  "version": "1.0.0",
+  "description": "vertx eventbus plus",
+  "main": "vertx-eventbus-plus.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kuangcao/vertx-eventbus-plus.git"
+  },
+  "keywords": [
+    "vertx",
+    "eventbus",
+    "reconnection"
+  ],
+  "author": "chenying <chenying@liziba.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kuangcao/vertx-eventbus-plus/issues"
+  },
+  "homepage": "https://github.com/kuangcao/vertx-eventbus-plus#readme"
+}
