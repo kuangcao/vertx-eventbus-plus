@@ -15,7 +15,7 @@
     "eventbus",
     "reconnection"
   ],
-  "author": "chenying <chenying@liziba.com>",
+  "author": "chenying <me.chenying@gmail.com>",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/kuangcao/vertx-eventbus-plus/issues"
