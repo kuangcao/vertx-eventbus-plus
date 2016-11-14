@@ -10,26 +10,26 @@ Usage:
 
 ```javascript
 
-	var eventBus = new EventBus('server url', {
-	    reconnectionAttempts: 5,
-	    reconnectionDelay: 5000 	
-	});
+var eventBus = new EventBus('server url', {
+    reconnectionAttempts: 5,
+    reconnectionDelay: 5000 	
+});
 	
-	eventBus.onopen = function() {
-	    ...
-	}
+eventBus.onopen = function() {
+    // do staff...
+}
 	
-	eventBus.onerror = function() {
-	    ...
-	}
+eventBus.onerror = function() {
+    // do staff...
+}
 	
-	eventBus.onclose = function() {
-	    ...
-	}
+eventBus.onclose = function() {
+    // do staff...
+}
 	
-	// emit after 5 attempts of reconnection
-	eventBus.onfatal = function(e) {
-	    console.error(e);
-	}
+// emit after 5 attempts of reconnection
+eventBus.onfatal = function(e) {
+    console.error(e);
+}
 
 ```

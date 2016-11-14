@@ -122,7 +122,7 @@
                 self.onclose && self.onclose(e);
 
                 // reconnect
-                self.connect();
+                self.reconnect();
             };
 
             self.sockJSConn.onmessage = function (e) {
@@ -169,7 +169,7 @@
             };
         };
 
-        // 首次连接
+        // init
         this.initSockJSConn();
     };
 
@@ -301,21 +301,21 @@
     };
 
     /**
-     * connect to server
+     * reconnect to server
      */
-    EventBus.prototype.connect = function() {
+    EventBus.prototype.reconnect = function() {
         var self = this;
 
         if (self.reconnectionAttempts > 0) {
             window.console &&
             window.console.info &&
-            window.console.info('EventBus connect after %dms...', self.reconnectionDelay);
+            window.console.info('EventBus reconnect after %dms...', self.reconnectionDelay);
             setTimeout(function() {
                 self.reconnectionAttempts--;
                 self.initSockJSConn();
             }, self.reconnectionDelay);
         } else {
-            self.onfatal && self.onfatal(new Error('EventBus 连接失败'));
+            self.onfatal && self.onfatal(new Error('EventBus reconnect failed'));
         }
     };
 
