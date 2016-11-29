@@ -1,6 +1,6 @@
 # vertx-eventbus-plus
 
-vertx eventbux plus
+vertx eventbus plus
 
 ## Enhancements:
 
